@@ -23,7 +23,7 @@ app.add_middleware(
 # ------------------------
 # Load Model
 # ------------------------
-MODEL_PATH = r"D:\Project101\Facial_emotions_prediction\app\models\best_model.h5"
+MODEL_PATH = r"app/models/best_model.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 
 # Define class names (ensure order matches training labels)
