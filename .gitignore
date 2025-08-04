@@ -44,3 +44,53 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+=======
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ------------------------
+# Virtual environment
+# ------------------------
+venv/
+env/
+.venv/
+.facevenv/
+
+# ------------------------
+# Jupyter Notebook
+# ------------------------
+*.ipynb_checkpoints
+
+# ------------------------
+# Data and Datasets
+# ------------------------
+data/
+*.csv
+*.tsv
+*.json
+
+# ------------------------
+# OS specific
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# IDEs
+# ------------------------
+.vscode/
+.idea/
+
+# ------------------------
+# Model Files
+# ------------------------
+# Keep only .h5 (for deployment), ignore other weights
+*.hdf5
+*.keras
+*.ckpt
