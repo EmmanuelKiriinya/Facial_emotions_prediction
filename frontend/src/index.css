@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 260 100% 99%;
+    --foreground: 260 15% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 15% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 15% 8%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 330 81% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 260 40% 96%;
+    --muted-foreground: 260 10% 40%;
+
+    --accent: 195 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 30% 90%;
+    --input: 260 30% 95%;
+    --ring: 262 83% 58%;
+
+    --upload-border: 195 100% 70%;
+    --upload-bg: 195 100% 95%;
+    --success: 142 80% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(195 100% 50%));
+    --gradient-secondary: linear-gradient(45deg, hsl(330 81% 60%), hsl(262 83% 58%));
+    --gradient-bg: linear-gradient(180deg, hsl(260 100% 99%), hsl(260 50% 98%));
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 260 25% 6%;
+    --foreground: 260 15% 95%;
+
+    --card: 260 20% 8%;
+    --card-foreground: 260 15% 95%;
+
+    --popover: 260 20% 8%;
+    --popover-foreground: 260 15% 95%;
+
+    --primary: 262 83% 68%;
+    --primary-foreground: 260 25% 6%;
+
+    --secondary: 330 81% 70%;
+    --secondary-foreground: 260 25% 6%;
+
+    --muted: 260 15% 12%;
+    --muted-foreground: 260 10% 60%;
+
+    --accent: 195 100% 60%;
+    --accent-foreground: 260 25% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 15% 15%;
+    --input: 260 15% 15%;
+    --ring: 262 83% 68%;
+
+    --upload-border: 195 100% 60%;
+    --upload-bg: 195 100% 8%;
+    --success: 142 80% 60%;
+    --success-foreground: 260 25% 6%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 68%), hsl(195 100% 60%));
+    --gradient-secondary: linear-gradient(45deg, hsl(330 81% 70%), hsl(262 83% 68%));
+    --gradient-bg: linear-gradient(180deg, hsl(260 25% 6%), hsl(260 20% 8%));
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
