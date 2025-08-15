@@ -47,3 +47,8 @@ Thumbs.db
 *.hdf5
 *.keras
 *.ckpt
+
+# But do NOT ignore package.json and config files
+!package.json
+!tsconfig.json
+!*.config.json
